@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div{
+            
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            font-size: 20px;
+            color: aliceblue;
+            transition: 3s;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #TranslateDiv:hover{
+            transform: translate(100px,100px);
+            background-color: yellow;
+            color: brown;
+        }
+
+        #RotateDiv:hover{
+            transform: Rotate(90deg);
+            border-radius: 50%;
+            color: black;
+            background-color: brown;
+            text-align: center;
+
+        }
+
+        #Rotate3D_Div:hover{
+            transform:  Rotate3D(0, 0, 1);
+        }
+
+        #SkewDiv:hover{
+            transform: skew(-40deg);
+        }
+
+        #ScaleDiv:hover{
+            transform: scale(1.5, 1.5);
+        }
+
+        #OpacityDiv:hover{
+            display: flex;
+            opacity: 0.7;
+            color: red;
+            justify-content: center;
+            
+        }
+
+        #RGBADiv:hover{
+            background-color: crimson;
+        }
+
+        #TextShadowDiv:hover{
+            text-shadow: 3px 3px 3px grey;
+            background-color: antiquewhite;
+            color: black;
+            font-size: larger;
+        }
+
+        #BorderRadiusDiv:hover{
+            display: flex;
+            border-radius: 50%;   
+                 
+        }
+
+        #OverFlowDiv:hover{
+            overflow: hidden;
+        }
+
+        #BoxShadow:hover{
+            box-shadow: 5px 5px red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="TranslateDiv">Translate</div>
+        <div id="RotateDiv">Rotate</div>
+        <div id="Rotate3D_Div">Rotate3D</div>
+        <div id="SkewDiv">Skew</div>
+        <div id="ScaleDiv">Scale</div>
+        <div id="OpacityDiv">Opacity</div>
+        <div id="RGBADiv">RGBA</div>
+        <div id="TextShadowDiv">TextShadow</div>
+        <div id="BorderRadiusDiv">BorderRadius</div>
+        <div id="OverFlowDiv">OverFlow</div>
+        <div id="BoxShadow">BoxShadow</div>
+    </div>
+    
+</body>
+</html>
