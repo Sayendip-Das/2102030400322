@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            width: 200px;
+            height: 50px;
+        }
+
+        .td5{
+            height: 150px;
+            background-image: url(img/main02-img.jpg);
+            background-size: cover;
+        }
+
+        .td1{
+            background-image: url(img/side_logo_img.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <table border="1">
+        <tr>
+            <td class="td1">1</td>
+            <td colspan="2">2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td class="td4">4</td>
+            <td rowspan="2" colspan="2" class="td5">5</td>
+            <td rowspan="2">6</td>
+        </tr>
+        <tr>
+
+        </tr>   
+
+        <tr>
+            <td>7</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+</body>
+</html>
