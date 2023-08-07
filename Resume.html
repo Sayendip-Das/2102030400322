@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practical01-Resume Making</title>
     <style>
+        fieldset{
+            min-width: 700px;
+            margin: 2rem 15rem;
+        }
         
         #name{
             display: flex;
@@ -19,10 +23,26 @@
             justify-content: space-between;
         }
 
+        #para{
+            padding: 0 10px;
+            list-style: none;
+        }
         #skills{
             display: flex;
             justify-content: space-around;
             
+        }
+        table{
+            margin: 1rem 0;
+            margin-left: 150px;
+            margin-right: 150px;
+        }
+        .vl{
+            margin: 20px 0;
+            border-left: 1px solid black;
+            height: 220px;
+            position: absolute;
+            left: 50%;
         }
         
     </style>
@@ -30,66 +50,121 @@
 <body>
     <div>
     <fieldset>
-    <h1 id="name">Sayendip Das</h1>
+    <h1 id="name"><u>Sayendip Das</u></h1>
+    <h3 id="name"><u>FULL STACK WEB DEVELOPER</u></h3>
     <div id="header">
-    <h5 id="email">Email-Id: sayendip1003@gmal.com</h5>
-    <h5 id="phone">Contact: 9887465373</h5>
-    <h5 id="city">City: Gandhinagar</h5>
+    <h4 id="email">Email-Id: sayendip1003@gmal.com</h4>
+    <h4 id="phone">Contact: 9887465373</h4>
+    <h4 id="city">Adress: B-12, Sec-14, Gandhinagar</h4>
     </div> 
 
     <hr>
     <h3>Objective:</h3>
     <hr>
-    <label for="fname">First Name:</label>
-    <input type="text" name="fname" id="fname">
+    <p ><li id="para">To start a career in a challenging and growth oriented organization to effevtively use my skills and excel as a professional to achieve greater heights and recognition in my career as an Full Stack Developer.</li></p>
     <br>
-    <br>
-    <label for="lname">Last Name:</label>
-    <input type="text" name="lname" id="lname"><br>
-    <br>
-    <label for="age">Age:</label>
-    <input type="radio" name="age" id="age">
-    <label for="age">Male</label>
-    <input type="radio" name="age" id="age">
-    <label for="age">Female</label>
-    <input type="radio" name="age" id="age">
-    <label for="age">Others</label><br>
-    <br>
-    <label for="address">Address:</label><br>
-    <textarea name="addess" id="adress" cols="60" rows="5"></textarea>
     <hr>
-    <h3>SKILLS</h3>
+        <h3>Personal Details:</h3>
+    <hr>
+    <table border="1" cellspacing="0" cellpadding="8px">
+        <tr>
+            <td>Name:</td>
+            <td>Sayendip Das</td>
+        </tr>
+        <tr>
+            <td>Father' Name:</td>
+            <td>Robin Das</td>
+        </tr>
+        <tr>
+            <td>Date Of Birth:</td>
+            <td>10 January 2003</td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td>Male</td>
+        </tr>
+        <tr>
+            <td>Village:</td>
+            <td>Barashat Nadia, Kolkata, West-Bengal</td>
+        </tr>
+        <tr>
+            <td>Hobbies:</td>
+            <td>Coding, Painting, Football Enthusiast, Playing Cricket</td>
+        </tr>
+
+    </table>
+    <hr>
+        <h3>Educational Qualifications:</h3>
+    <hr>
+    <table border="1" cellspacing="0" cellpadding="10px">
+        <tr>
+            <th>Qualification</th>
+            <th>Institution</th>
+            <th>Year Of Passing</th>
+            <th>Percentage/CGPA</th>
+        </tr>
+
+        <tr>
+            <td>B Tech(CSE)</td>
+            <td>Silver Oak Intitute Of Technology</td>
+            <td style="text-align: center;">2025</td>
+            <td style="text-align: center;">9.96</td>
+        </tr>
+        <tr>
+            <td>Class 12th</td>
+            <td>Kendriya Vidhyalaya Sec-30 Gandhinagar</td>
+            <td style="text-align: center;">2021</td>
+            <td style="text-align: center;">92%</td>
+        </tr>
+        <tr>
+            <td>Class 10th</td>
+            <td>Kendriya Vidhyalaya Sec-30 Gandhinagar</td>
+            <td style="text-align: center;">2019</td>
+            <td style="text-align: center;">89%</td>
+        </tr>
+    </table>
+    <hr>
+    <h3>Skills:</h3>
     <hr>
     <div id="skills">
         <ul>
             <h3>Technical Skills</h3>
             <li>C Programming</li>
-            <li>C++</li>
-            <li>Java</li>
+            <li>C++ Programming</li>
+            <li>Core Java</li>
+            <li>Advance Java</li>
             <li>Python</li>
-            <li>HTML , CSS & Java Script</li>
-            <li>React JS</li>
+            <li>HTML, CSS & Java Script</li>
+            <li>React JS, Redux, Express</li>
+            <li>MySQL, MongoDB</li>
+            <li>Node JS</li>
         </ul>
-    
+        <div class="vl"></div>
         <ul>
             <h3>Soft Skills</h3>
             <li>Collaboration</li>
             <li>Communication</li>
-            <li>Precision</li>
+            <li>Team Work</li>
             <li>Active Learning</li>
             <li>Adapting capabillity</li>
+            <li>Precision</li>
         </ul>
     </div>
     <hr>
-        <h3>Projects & Courses</h3>
+        <h3>Projects & Courses:</h3>
     <hr>
-
     <ul>
         <li>Build an Ecomerce Website with help of Complete HTML,CSS And JavaScript. Also Add RazorPay Gateway Method.</li>
         <li>Create an Stopwatch with helpof javaScript.</li>
         <li>Build Netflix Clone App and Use API to fetch all Movies details.</li>
+        <li>Bulid a Tinder Clone App Using React JS.</li>
+        <li>Completed Google DevOps Course</li>
         <li>Completed IBM Data Science Course.</li>
     </ul>
+    <hr>
+        <h3>Declaration:</h3>
+    <hr>
+    <p>I hereby declare that all the above mentioned information is true to the best of my knowledge and belief</p>
     </fieldset>
 </body>
 </html>
